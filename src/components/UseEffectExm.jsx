@@ -75,7 +75,7 @@ export function SetTimeoutExample() {
             clearTimeout(timer);
         } // cleanup
     }, []);
-    return <p className='p-4 border-2 m-2'>⏰Check the console in 2 seconds...</p>;
+    return <p className='p-4 border-2 my-2 rounded-lg'>⏰Check the console in 2 seconds...</p>;
 }
 
 
@@ -90,7 +90,7 @@ export function SetIntervalExample() {
             clearInterval(interval); // cleanup on unmount
         }
     }, []);
-    return <h2 className='p-4 border-2 m-2'>Timer: {count}</h2>;
+    return <h2 className='p-4 border-2 my-2 rounded-lg'>Timer: <span className='text-blue-400'>{count}</span></h2>;
 }
 
 
@@ -120,8 +120,8 @@ export function DataFetcher() {
         )
     }
     return (
-        <ul className='text-start list-disc'>
-            <h1 className='underline-offset-4 underline'>fetched data titles</h1>
+        <ul className='text-start list-disc pl-8 p-4 my-2 bg-slate-800 rounded-lg'>
+            <h1 className='underline-offset-4 underline text-slate-300 mb-4'>fetched data titles</h1>
             {data.map(post => (
                 post.id < 6 ? (
                     <li key={post.id}>{post.title}</li>
@@ -146,8 +146,8 @@ export function WidthTracker() {
         }
     },[])
     return (
-        <div>
-            <h1>Window width: {windowWidth}px</h1>
+        <div className="bg-slate-800 my-2 p-2 rounded-lg">
+            <h1>Window width: <span className='text-blue-400'>{windowWidth}</span>px</h1>
         </div>
     )
 }
