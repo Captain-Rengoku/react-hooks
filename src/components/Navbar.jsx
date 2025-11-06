@@ -30,6 +30,7 @@ const navLinks = [
   { to: "/useinsertioneffect", label: "useInsertionEffect" },
   { to: "/usedebugvalue", label: "useDebugValue" },
 
+  { to: "/customhooks", label: "CustomHooks" },
   { to: "/random-url", label: "Random URL" },
 ];
 

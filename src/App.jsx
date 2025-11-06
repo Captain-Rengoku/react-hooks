@@ -21,6 +21,7 @@ import UseImperativeHandle from "./pages/UseImperativeHandle";
 import UseInsertionEffect from "./pages/UseInsertionEffect";
 import UseDebugValue from "./pages/UseDebugValue";
 import NotFound from "./pages/NotFound";
+import CustomHooks from "./pages/CustomHooks";
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="/useimperativehandle" element={<UseImperativeHandle />} />
         <Route path="/useinsertioneffect" element={<UseInsertionEffect />} />
         <Route path="/usedebugvalue" element={<UseDebugValue />} />
+        <Route path="/customhooks" element={<CustomHooks />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
