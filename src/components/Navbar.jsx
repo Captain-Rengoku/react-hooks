@@ -4,18 +4,32 @@ import { FormInput } from "lucide-react";
 
 const navLinks = [
   // { to: "/", label: "Home" },
+  
+  // ⭐⭐⭐⭐⭐
   { to: "/childrenprops", label: "Children Props" },
   { to: "/usestate", label: "useState" },
   { to: "/liftingstateup", label: "State Lifting" },
   { to: "/conditionalrendering", label: "Conditional" },
   { to: "/eventhandling", label: "Event Handling" },
   { to: "/useeffect", label: "useEffect" },
+  { to: "/usecontext", label: "useContext" },
+  // ⭐⭐⭐⭐
+  { to: "/usereducer", label: "useReducer" },
   { to: "/useref", label: "useRef" },
   { to: "/usememo", label: "useMemo" },
   { to: "/usecallback", label: "useCallback" },
-  { to: "/usereducer", label: "useReducer" },
-  { to: "/usecontext", label: "useContext" },
-  // { to: "/allinputs", label: "All Inputs" },
+  { to: "/usetransition", label: "useTransition" },
+  // ⭐⭐⭐
+  { to: "/uselayouteffect", label: "useLayoutEffect" },
+  { to: "/usedeferredvalue", label: "useDeferredValue" },
+  { to: "/useid", label: "useId" },
+  // ⭐⭐
+  { to: "/usesyncexternalstore", label: "useSync" },
+  { to: "/useimperativehandle", label: "useImperative" },
+  // ⭐
+  { to: "/useinsertioneffect", label: "useInsertionEffect" },
+  { to: "/usedebugvalue", label: "useDebugValue" },
+
   { to: "/random-url", label: "Random URL" },
 ];
 
@@ -63,7 +77,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:grid md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10 gap-x-6 text-lg bg-slate-800 px-2 rounded-lg">
+        <nav className="hidden md:grid md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 2xl:grid-cols-9 gap-x-6 text-lg bg-slate-800 px-2 rounded-lg">
           {navLinks.map(({ to, label }) => (
             <NavLink
               key={to}
