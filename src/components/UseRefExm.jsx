@@ -33,14 +33,14 @@ const UseRefExm = () => {
 
   return (
     <div className="bg-slate-800 p-2 rounded-lg text-xl">
-      <p>Count: {count}</p>
+      <p>UseState Count: {count}</p>
       <button
         className="bg-blue-500 px-2 py-1 mb-8 mt-1 rounded-lg font-bold hover:bg-blue-600 cursor-pointer"
         onClick={handleClickCount}
       >
         Increment Count
       </button>
-      <p>Value: {value.current}</p>
+      <p>UseRef Value: {value.current}</p>
       {/* This will not showup in screen immediately as useRef does not re-renders on change*/}
       <button
         className="bg-blue-500 px-2 py-1 mb-8 mt-1 rounded-lg font-bold hover:bg-blue-600 cursor-pointer"

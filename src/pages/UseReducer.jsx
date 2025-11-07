@@ -31,7 +31,7 @@ const UseReducer = () => {
             </li>
             <li>
               <b className="text-blue-300">
-                Dispatch sents an action to the reducer function
+                Dispatch sents an action to the reducer function which returns a new state.
               </b>
             </li>
             <li>Actions: Objects that describe what should happen.</li>

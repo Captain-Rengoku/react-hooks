@@ -1,4 +1,4 @@
-import UseTransitionExm from "../components/UseTransitionExm";
+import UseTransitionExm, { SortExample } from "../components/UseTransitionExm";
 
 const UseTransition = () => {
   return (
@@ -8,6 +8,7 @@ const UseTransition = () => {
           UseTransition
         </h1>
         <UseTransitionExm />
+        <SortExample/>
       </div>
     </div>
   );

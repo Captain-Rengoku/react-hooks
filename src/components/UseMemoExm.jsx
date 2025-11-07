@@ -2,6 +2,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useMemo } from "react";
 
+// 1 ////////////////////////////////////////////////////////////////////////////
+
 export const ProblemWithoutUseMemo = () => {
   const [count, setCount] = useState(0);
   function expensiveTask(num) {
@@ -29,6 +31,8 @@ export const ProblemWithoutUseMemo = () => {
   );
 };
 
+// 2 ////////////////////////////////////////////////////////////////////////////
+
 export const SolutionWithoutUseMemo = () => {
   const [count, setCount] = useState(0);
   function expensiveTask(num) {
@@ -54,6 +58,8 @@ export const SolutionWithoutUseMemo = () => {
     </div>
   );
 };
+
+// 3 ////////////////////////////////////////////////////////////////////////////
 
 export const WithoutUseMemo = () => {
   const [number, setNumber] = useState(1000000000);
@@ -93,6 +99,8 @@ export const WithoutUseMemo = () => {
     </div>
   );
 };
+
+// 4 ////////////////////////////////////////////////////////////////////////////
 
 export const WithoutUseMemoOptimized = () => {
   const [number, setNumber] = useState(1000000000);
@@ -142,6 +150,8 @@ export const WithoutUseMemoOptimized = () => {
     </div>
   );
 };
+
+// 5 ////////////////////////////////////////////////////////////////////////////
 
 export const WithUseMemo = () => {
   const [number, setNumber] = useState(1000000000);

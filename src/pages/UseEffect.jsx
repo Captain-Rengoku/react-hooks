@@ -22,7 +22,7 @@ const UseEffect = () => {
         <ul className="pl-8 p-4 text-start list-decimal">
           <li>
             useEffect is a React Hook that lets you perform side effects in
-            function components.
+            functional components.
           </li>
           <li>
             <b>Side Effects</b> = anything that affects the outside world:
