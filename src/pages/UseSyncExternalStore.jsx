@@ -1,4 +1,7 @@
 import UseSyncExternalStoreExm from "../components/UseSyncExternalStoreExm";
+import { UseSyncExternalStoreExmFour } from "../components/UseSyncExternalStoreExmFour";
+import { UseSyncExternalStoreExmThree } from "../components/UseSyncExternalStoreExmThree";
+import { UseSyncExternalStoreExmTwo } from "../components/UseSyncExternalStoreExmTwo";
 
 const UseSyncExternalStore = () => {
   return (
@@ -8,6 +11,12 @@ const UseSyncExternalStore = () => {
           UseSyncExternalStore
         </h1>
         <UseSyncExternalStoreExm/>
+        <h1 className="text-2xl sm:text-3xl font-bold text-indigo-400 text-center mb-2 mt-8">
+          UseSyncExternalStore Example Two
+        </h1>
+        <UseSyncExternalStoreExmTwo/>
+        <UseSyncExternalStoreExmThree/>
+        <UseSyncExternalStoreExmFour/>
       </div>
     </div>
   );

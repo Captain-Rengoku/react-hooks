@@ -47,28 +47,28 @@ export default function UseSyncExternalStoreExm() {
   return (
     <div className="flex flex-col items-center justify-center bg-slate-900">
       <div className="bg-slate-800 rounded-2xl p-4 shadow-lg w-full text-center text-xl">
-        <p className="text-xl text-slate-300 mb-6">
-          Keeps React in sync with data that lives <b>outside</b> React (like global stores or APIs).
+        <p className="text-xl text-slate-300 mb-2">
+          Keeps React in sync with data that lives <b>outside</b> React (like
+          global stores or APIs).
         </p>
-
-        <div className="text-5xl font-bold mb-6">{value}</div>
 
         <div className="flex justify-center gap-4">
           <button
             onClick={decrement}
-            className="bg-red-600 hover:bg-red-700 px-4 py-2 cursor-pointer rounded-lg font-semibold transition"
+            className="bg-red-600 hover:bg-red-700 px-6 py-2 cursor-pointer rounded-lg font-semibold transition"
           >
             -
           </button>
+          <div className="text-5xl font-bold">{value}</div>
           <button
             onClick={increment}
-            className="bg-green-600 hover:bg-green-700 px-4 py-2 cursor-pointer rounded-lg font-semibold transition"
+            className="bg-green-600 hover:bg-green-700 px-6 py-2 cursor-pointer rounded-lg font-semibold transition"
           >
             +
           </button>
           <button
             onClick={reset}
-            className="bg-yellow-600 hover:bg-yellow-700 px-4 py-2 cursor-pointer rounded-lg font-semibold transition flex items-center gap-1"
+            className="bg-yellow-600 hover:bg-yellow-700 px-6 py-2 cursor-pointer rounded-lg font-semibold transition flex items-center gap-1"
           >
             <RefreshCw size={16} /> Reset
           </button>

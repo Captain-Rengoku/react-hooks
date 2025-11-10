@@ -1,9 +1,10 @@
-import { useState, useDeferredValue, useMemo } from "react";
+import { useState, useDeferredValue, useMemo, useEffect } from "react";
 
 export default function UseDeferredValueExm() {
   const [query, setQuery] = useState("");
 
   // ✅ Defer the query so list updates lag slightly behind typing
+  // the value that you pass must be a primitive (boolean, number, string)
   const deferredQuery = useDeferredValue(query);
 
   // Simulate a heavy computation (like filtering 10,000 items)
@@ -18,8 +19,16 @@ export default function UseDeferredValueExm() {
     );
   }, [deferredQuery, bigList]);
 
+  useEffect(() => {
+    console.log("query:", query);
+    console.log("Deferred query:", deferredQuery);
+    console.log("--- End of render ---");
+  }, [query, deferredQuery]);
+
   return (
     <div className="p-4 text-white bg-slate-800 rounded-lg">
+      <p className="text-center text-green-400">Returns a deferred version of the value that may “lag behind” it.</p>
+      <p className="text-center text-slate-400">Check Console for a better understanding!</p>
       <input
         className="p-2 w-full mb-2 rounded bg-slate-900 border border-slate-700"
         type="text"
