@@ -1,4 +1,6 @@
-import UseImperativeHandleExm from "../components/UseImperativeHandleExm";
+import UseImperativeHandleExm, {
+  ParentComponent,
+} from "../components/UseImperativeHandleExm";
 
 const UseImperativeHandle = () => {
   return (
@@ -7,7 +9,8 @@ const UseImperativeHandle = () => {
         <h1 className="text-2xl sm:text-3xl font-bold text-indigo-400 text-center mb-2">
           UseImperativeHandle
         </h1>
-        <UseImperativeHandleExm/>
+        <ParentComponent />
+        <UseImperativeHandleExm />
       </div>
     </div>
   );
