@@ -1,7 +1,6 @@
-import {
-  FetchExample,
-  LocalStorageExample,
-} from "../components/CustomHooksExm";
+import ToggleExample from "../components/CustomHooksToggleExample";
+import FetchExample from "../components/CustomHooksFetchExample";
+import LocalStorageExample from "../components/CustomHooksLocalStorageExample";
 
 const CustomHooks = () => {
   return (
@@ -10,8 +9,9 @@ const CustomHooks = () => {
         <h1 className="text-2xl sm:text-3xl font-bold text-indigo-400 text-center mb-2">
           CustomHooks
         </h1>
+        <ToggleExample/>
         <LocalStorageExample />
-        <FetchExample/>
+        <FetchExample />
       </div>
     </div>
   );
