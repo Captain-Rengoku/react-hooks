@@ -33,7 +33,7 @@ export default function UseDebugValueExm() {
     <div className="p-4 bg-slate-800 rounded-lg text-white">
       <h2 className="text-xl mb-2">useDebugValue Example</h2>
       <p>
-        <b>Status:</b>{" "}
+        <b className="text-indigo-300">Your Internet Status :</b>{" "}
         <span
           className={`font-bold ${
             isOnline ? "text-green-400" : "text-red-400"
